@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  margin: 10px; /*margin establece el margen para los cuatro lados*/
+  padding: 5px; /*padding establece el espacio de relleno*/
+ /* background-color: lightgreen; cambia el color de relleno*/
+  font-family: Verdana; /*cambia el tipo de letra*/
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+body {    
+ /*background-image:url("../img/img3.jpg");
+ background-image:url("../img/fondo.jfif");*/
+ background-color: white;
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-size: 1.65rem;
+ }
+
+
+ img {    max-width: 100%;}
+
+ h2 {    font-size: 3rem;}
+ 
+ .contenedor {
+     max-width: 1200px;  
+     width: 95%;
+     margin: 0 auto;
+ }
+ 
+ .entrada-blog a{
+     display: inline-block;
+     background-color: rgb(70, 91, 185);
+     color: #fff;
+     padding: 10px 20px;
+     text-decoration: none;
+     font-weight: bold;
+     text-transform: uppercase;
+ }
+ 
+ .tres-columnas {
+     display: grid;
+     grid-template-areas: 
+         "col1 col2 col3"
+         "col1 col2 col3";
+     grid-template-columns: 1fr 1fr 1fr;
+     column-gap: 1rem;
+ }
+ 
+P {
+    color: black;
+    color: rgb(157, 10, 10);
+    font-size: 16px; /* Texto de 16 píxeles */
+    }
+
+    /*esto es para las clases*/
+
+.subtitulos {
+      margin-left: 50px;
+      color: rgb(120, 205, 50);
+      background-color:yellow;
+  }
+  
+ .nosotros {
+    border:#4d8ee4 ;
+    border-style: solid;
+    text-align: center;
+    text-underline-position: above;
+ }
+
+  /*esto es ppara los id*/
+  #texto {
+    color: white;
+    background-color: rgb(222, 238, 130);
+    text-align: center;
+    margin-left: 100px;
+}
+
+.nav {
+  background-color:#4d8ee4 ;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav a {
+  color:aliceblue;
+}
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.navpie {
+ /* background-color:#4d8ee4 ; */
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.navpie a {
+  color:rgb(3, 7, 10);
+}
+.navpie li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.grid-container {
+  width: 800px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;
+  background-color: blue;
+  padding: 10px;
+  }
+  .grid-container> div {
+    background-color: lightblue;
+    text-align: center;
+    font-size: 20px;
+    height: 40px;
+  }
+  .producto {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#carrito {
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+}
+button:hover {
+    background-color: #45a049;
+}
+.agotado {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.descuento {
+    color: green;
+    font-weight: bold;
+}
+#checkout-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+.checkout-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}  
+
+/*
+color: rgba(255, 99, 71, 0.5);  Tomate semitransparente */
+/*style="estilo CSS": abarcar Especifica un estilo CSS conforme al elemento. +info
+class="texto": Especifica uno o más nombres de clases para un elemento (haciendo referencia a una clase en una hoja de estilo). +info
+id="texto": Especifica un id único por cada página. +info
+title="texto": Especifica información extra sobre un elemento (Tooltip Text). +info 
+hidden: Evita que el elemento y sus descendientes se muestran en el navegador. Cualquier control de formulario o de script dentro de la sección hidden será ejecutado, aunque no se muestra al usuario. +info
+tabindex="número":  CSS  Especifica la posición del elemento en el orden de tabulación del documento. Se usa para tabular a través de los links de la página (o campos de un formulario). +info
+translate="yes|no": Indica si el texto del contenido del elemento y los valores del atributo deben ser traducidos o no. La opción por defecto es yes. +info
+lang=”es”: Especifica el idioma del contenido del elemento. +info
+spellcheck="true|false": Especifica si se debe corregir o no la gramática y la ortografía del elemento. +info
+draggable="true|false": Indica si el elemento es arrastrable; se puede mover haciendo click sin soltar, moviéndolo a una nueva posición en la ventana. +info
+*/

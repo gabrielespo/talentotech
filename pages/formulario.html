@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Complete la información</h1>
+    <form action="https://formspree.io/f/mblrvqzb" method="post">
+        <Fieldset>
+            <Legend><b>Datos Personales</b></Legend>
+            <label for="nombre">Nombre [*]</label>
+            <input type="text" id="" name="" size="10" maxlength="15" required>
+            <label for="apellido">Apellido [*]</label>
+            <input type="text" id="" name="" size="10" maxlength="15" required> <br><br>
+            <label for="dni">DNI</label>
+            <input type="number" name="dni" id="" required>
+            <label for="tram_dni">N° de Trámite</label>
+            <input type="password" name="tram_dni" id="" required>
+            <label for="fec_nac">Fecha de Nacimiento</label>
+            <input type="date" name="fec_nac" id="" required> <br><br>
+            <label for="estatura">Estatura</label>
+            <select name="estatura" id="">
+                <option value="baja">Baja</option>
+                <option value="mediana">Mediana</option>
+                <option value="alta">Alta</option>
+                <option value="sup_alta" disabled>Super Alta</option>
+            </select> <br><br>
+            <label for="correo">E-mail</label>
+            <input type="email" name="correo" id="">
+            <label for="adjunto">Adjuntar foto</label>
+            <input type="file" name="adjunto" id=""> 
+        </Fieldset><br><br>
+        <br><br>
+        <label for="comentarios">Escriba su consulta</label> <br>
+        <textarea name="comentarios" id="" cols="30" rows="10" placeholder="Escriba aquí su consulta (max 300 caracteres)"></textarea>
+        <br><br>
+        <label for="turno">Seleccione el horario</label>
+        <select name="turno" id="" size="2">
+            <option value="1">Mañana</option>
+            <option value="2">Tarde</option>
+            <option value="3">Vespertino</option>
+            <option value="4">Noche</option>
+        </select>
+        <br><br>
+        <label for="cp">Conocimientos previos</label>
+        <input type="checkbox" name="cp" id="" value="1">HTML
+        <input type="checkbox" name="cp" id="" value="2">CSS
+        <input type="checkbox" name="cp" id="" value="3">JavaScript
+        <input type="checkbox" name="cp" id="" value="4">Ninguno
+        <br><br>
+        <label for="rb">Zona de Residencia</label>
+        <input type="radio" name="rb" id="" value="1">CABA
+        <input type="radio" name="rb" id="" value="2">Gran Bs. As.
+        <input type="radio" name="rb" id="" value="3">Provincia de Bs As.
+        <input type="radio" name="rb" id="" value="4">Interior del país
+        <br><br>
+        <input type="checkbox" name="condiciones" id="" required>
+        Acepto los términos y condiciones <br><br>
+
+        <input type="submit" value="Enviar Datos">
+        <input type="reset" value="Borrar">
+
+    </form>
+</body>
+</html>
